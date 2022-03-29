@@ -1,0 +1,117 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+.barra_navegacion{
+    display: flex;
+    height: 100px;
+    background: #212529;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    color:white;
+}
+
+.enlaces_navbar{display: flex;}
+ul{list-style: none;}
+
+.link_barra{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    border: 0px solid rgb( 0, 0, 0,0.0);
+}
+
+.link_barra:hover{
+    transition: all 0.3s ease;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+}
+
+.boton_menu{
+    display: none;
+    cursor: pointer;
+    margin:0 20px 0 0;
+    font-size: 25px;
+    color: white;
+}
+
+.main{
+    margin:0 auto;
+    height: 80%;
+    width: 80%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+}
+
+
+.titulo_zedd{font-size: 80px;}
+p{font-size:20px;letter-spacing: 1.5px;line-height: 30px;}
+
+
+.presentacion{max-width: 800px;}
+
+
+.btn_conoce_mas{
+    width: 80px;
+    height: 30px;
+    font-size: 22px;
+    text-decoration: none;
+    animation: cambiar_color 10s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: 1px pink solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.boton_barra{
+    color: white;
+    background:none;
+    border:none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+
+@media screen and (max-width:1170px){
+    .presentacion_texto{
+        font-size: 14px;
+    }
+    .elemento_barra{
+        padding: 20px 20px 20px 0px;
+    }
+    .enlaces_navbar{
+        flex-direction: column;
+        background: #212529;
+        margin-top: 20px;
+        position: fixed;
+        transition: left 0.3s ease;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: calc(60% - 60px);
+        overflow-y: auto;
+    }
+
+    .boton_barra{
+        display: block;
+    }
+
+    .barra_menu_visible{
+        left: 100%;
+    }
+}
