@@ -28,3 +28,6 @@ var preguntas=[];
 
 
 preguntas[0]=new pregunta("¿Qué es el diseño arquitectónico?","Proceso multiface en el que se sintetiza representaciones de la estructura de datos","Proceso multiface en el que se sintetiza la estructura del programa","Proceso multiface en el que se sintetiza las características de la interfaz y los detalles procedimentales desde los requisitos de la información", "Todas las Anteriores",3);
+preguntas[1]=new pregunta("¿Qué significa el término “problema indecidible”?","función indescifrable","función invisible","función no calculable","función no legible",3);
+preguntas[2]=new pregunta("¿Cuál es la tesis que nos indica que cualquier función computable tiene representación con una máquina de Turing?","tesis de hurch","tesis de Riemann","tesis de Turing","tesis de Rice",1);
+tesi
