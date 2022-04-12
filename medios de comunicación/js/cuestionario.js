@@ -35,3 +35,6 @@ preguntas[4]=new pregunta("¿De qué año es el artículo “On Computable Numbe
 preguntas[5]=new pregunta("¿Qué significa la palabra Entscheidungsproblem?","Problema de Decisión","Problema de Invasión","Problema de Acción","Problema de Reacción",1);
 preguntas[6]=new pregunta("¿Cuál es la representación de una función universal?","U〈x,y〉=y(x)","U〈φ,y〉=φi(y)","U〈x,y〉=φi(x,y)","U〈φ,x〉=φi(x)",4);
 preguntas[7]=new pregunta("¿Cuál es la representación de una función universal?","U〈x,y〉=y(x)","U〈φ,y〉=φi(y)","U〈x,y〉=φi(x,y)","U〈φ,x〉=φi(x)",4);
+preguntas [ 8 ] = new  pregunta ( "¿Qué es un intérprete?" , "Un programa que se encarga de sólo analizar programas." , "Un programa que analiza y ejecuta simultáneamente un programa." , "Un programa que se encarga de la traducción de otro programa." , "Un programa que necesariamente resulta en código máquina." , 2 ) ;
+preguntas [ 9 ] = new  pregunta ( "¿Cual de las siguientes es una característica de los intérpretes ?" , "Manejo de un lenguaje." , "Manejo único de dos lenguajes." , "Manejo mínimo de dos lenguajes." , "Ninguna de las anteriores." , 3 ) ;
+preguntas [ 10 ] = new  pregunta ( "¿En cuántas partes se divide la organización interna de un intérprete?" , "2" , "3" , "4" , "5" , 4 ) ;
