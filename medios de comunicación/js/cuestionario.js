@@ -27,14 +27,13 @@ var retorno=[];
 var preguntas=[];
 
 
-preguntas[0]=new pregunta("¿Qué es el diseño arquitectónico?","Proceso multiface en el que se sintetiza representaciones de la estructura de datos","Proceso multiface en el que se sintetiza la estructura del programa","Proceso multiface en el que se sintetiza las características de la interfaz y los detalles procedimentales desde los requisitos de la información", "Todas las Anteriores",3);
-preguntas[1]=new pregunta("¿Qué significa el término “problema indecidible”?","función indescifrable","función invisible","función no calculable","función no legible",3);
-preguntas[2]=new pregunta("¿Cuál es la tesis que nos indica que cualquier función computable tiene representación con una máquina de Turing?","tesis de Church","tesis de Riemann","tesis de Turing","tesis de Rice",1);
-preguntas[3]=new pregunta("De acuerdo a la Tesis de Church, ¿qué recursos se pueden usar para calcular cualquier función calculable?","Una máquina universal de Turing o un programa while","función µ-Recursiva o un programa for","un programa while, una función indecidible o una función  µ-Recursiva","Una máquina de Turing, función µ-Recursiva o un programa while: Respuesta correcta",4);
-preguntas[4]=new pregunta("¿De qué año es el artículo “On Computable Numbers, with an Application to the Entscheidungsproblem” de Alan Turing?","1938","1936","1935","1940",2);
-preguntas[5]=new pregunta("¿Qué significa la palabra Entscheidungsproblem?","Problema de Decisión","Problema de Invasión","Problema de Acción","Problema de Reacción",1);
-preguntas[6]=new pregunta("¿Cuál es la representación de una función universal?","U〈x,y〉=y(x)","U〈φ,y〉=φi(y)","U〈x,y〉=φi(x,y)","U〈φ,x〉=φi(x)",4);
-preguntas[7]=new pregunta("Todas estas son propiedades de un algoritmo según Turing, excepto...","el número de instrucciones es finito","no hay límite al número de pasos ni a la cantidad de memoria necesaria","cada instrucción tiene un efecto limitado","U〈φ,x〉=φi(x)",4);
-preguntas [ 8 ] = new  pregunta ( "¿Qué es un intérprete?" , "Un programa que se encarga de sólo analizar programas." , "Un programa que analiza y ejecuta simultáneamente un programa." , "Un programa que se encarga de la traducción de otro programa." , "Un programa que necesariamente resulta en código máquina." , 2 ) ;
-preguntas [ 9 ] = new  pregunta ( "¿Cual de las siguientes es una característica de los intérpretes ?" , "Manejo de un lenguaje." , "Manejo único de dos lenguajes." , "Manejo mínimo de dos lenguajes." , "Ninguna de las anteriores." , 3 ) ;
-preguntas [ 10 ] = new  pregunta ( "¿En cuántas partes se divide la organización interna de un intérprete?" , "2" , "3" , "4" , "5" , 4 ) ;
+preguntas[0]=new pregunta("¿Qué significa el término “problema indecidible”?","función indescifrable","función invisible","función no calculable","función no legible",3);
+preguntas[1]=new pregunta("¿Cuál es la tesis que nos indica que cualquier función computable tiene representación con una máquina de Turing?","tesis de Church","tesis de Riemann","tesis de Turing","tesis de Rice",1);
+preguntas[2]=new pregunta("De acuerdo a la Tesis de Church, ¿qué recursos se pueden usar para calcular cualquier función calculable?","Una máquina universal de Turing o un programa while","función µ-Recursiva o un programa for","un programa while, una función indecidible o una función  µ-Recursiva","Una máquina de Turing, función µ-Recursiva o un programa while: Respuesta correcta",4);
+preguntas[3]=new pregunta("¿De qué año es el artículo “On Computable Numbers, with an Application to the Entscheidungsproblem” de Alan Turing?","1938","1936","1935","1940",2);
+preguntas[4]=new pregunta("¿Qué significa la palabra Entscheidungsproblem?","Problema de Decisión","Problema de Invasión","Problema de Acción","Problema de Reacción",1);
+preguntas[5]=new pregunta("¿Cuál es la representación de una función universal?","U〈x,y〉=y(x)","U〈φ,y〉=φi(y)","U〈x,y〉=φi(x,y)","U〈φ,x〉=φi(x)",4);
+preguntas[6]=new pregunta("Todas estas son propiedades de un algoritmo según Turing, excepto...","el número de instrucciones es finito","no hay límite al número de pasos ni a la cantidad de memoria necesaria","cada instrucción tiene un efecto limitado","U〈φ,x〉=φi(x)",4);
+preguntas[7]=new pregunta("¿Qué es un intérprete?" , "Un programa que se encarga de sólo analizar programas." , "Un programa que analiza y ejecuta simultáneamente un programa." , "Un programa que se encarga de la traducción de otro programa." , "Un programa que necesariamente resulta en código máquina." , 2 ) ;
+preguntas[8]=new pregunta("¿Cual de las siguientes es una característica de los intérpretes ?" , "Manejo de un lenguaje." , "Manejo único de dos lenguajes." , "Manejo mínimo de dos lenguajes." , "Ninguna de las anteriores." , 3);
+preguntas[9]=new pregunta("¿En cuántas partes se divide la organización interna de un intérprete?" , "2" , "3" , "4" , "5" , 4 );
