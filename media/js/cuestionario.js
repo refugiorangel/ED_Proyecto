@@ -39,3 +39,4 @@ preguntas[8]=new pregunta("¿Cual de las siguientes es una característica de lo
 preguntas[9]=new pregunta("¿En cuántas partes se divide la organización interna de un intérprete?" , "2" , "3" , "4" , "5" , 4 );
 preguntas[10]=new pregunta("¿Cuántas cintas tiene una MT que representa a U?" , "3" , "4" , "5" , "6" , 2 );
 preguntas[11]=new pregunta("¿De cuántas fases se compone la actividad de U?" , "1" , "2" , "3" , "4" , 3 );
+preguntas[12]=new pregunta("¿A qué teorema pertenece el siguiente enunciado?.Existe una función calculable parcial de dos argumentos ϕz tal que, para todo x e i, ϕz(i, x) = ϕi(x) " , "universalidad" , "cardinalidad" , "complejidad" , "computabilidad" , 1 );
