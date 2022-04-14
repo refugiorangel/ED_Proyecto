@@ -45,4 +45,5 @@ preguntas[14]=new pregunta("¿A qué fase de U corresponde: inicializar el conte
 preguntas[15]=new pregunta("¿A qué fase de U corresponde: simular reiteradamente los pasos de M hasta llegar a uno de sus estados finales?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 2 );
 preguntas[16]=new pregunta("¿A qué fase de U corresponde: si la fase anterior termina, limpiar las cintas manteniendo sólo el output en la primera.?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 1 );
 preguntas[17]=new pregunta("¿Cuál es el resultado final de U tras recibir la input correspondiente?" , "el mismo resultado M(w) que se obtendría ejecutando M sobre w" , "la descripción de un input w" , "la descripción de la Máquina de Turing" , "No se obtiene nada" , 1 );
-preguntas[18]=new pregunta("¿Cuáles son las entradas con las que cuentan los intérpretes?" , "una lengua materna" , "una lengua extranjera" , "un lenguaje escrito en lenguaje fuente" , "4" , 3 );
+preguntas[18]=new pregunta("¿Cuáles son las entradas con las que cuentan los intérpretes?" , "una lengua materna" , "una lengua extranjera" , "un lenguaje escrito en lenguaje fuente" , "un traductor" , 3 );
+preguntas[19]=new pregunta("¿Cuántas cintas tiene una MT que representa a U?" , "3" , "4" , "5" , "6" , 2 );
