@@ -33,7 +33,8 @@ preguntas[2]=new pregunta("De acuerdo a la Tesis de Church, ¿qué recursos se p
 preguntas[3]=new pregunta("¿De qué año es el artículo “On Computable Numbers, with an Application to the Entscheidungsproblem” de Alan Turing?","1938","1936","1935","1940",2);
 preguntas[4]=new pregunta("¿Qué significa la palabra Entscheidungsproblem?","Problema de Decisión","Problema de Invasión","Problema de Acción","Problema de Reacción",1);
 preguntas[5]=new pregunta("¿Cuál es la representación de una función universal?","U〈x,y〉=y(x)","U〈φ,y〉=φi(y)","U〈x,y〉=φi(x,y)","U〈φ,x〉=φi(x)",4);
-preguntas[6]=new pregunta("Todas estas son propiedades de un algoritmo según Turing, excepto...","el número de instrucciones es finito","no hay límite al número de pasos ni a la cantidad de memoria necesaria","cada instrucción tiene un efecto limitado","U〈φ,x〉=φi(x)",4);
+preguntas[6]=new pregunta("Todas estas son propiedades de un algoritmo según Turing, excepto...","el número de instrucciones es finito","no hay límite al número de pasos ni a la cantidad de memoria necesaria","cada instrucción tiene un efecto limitado","los pasos no son deterministas",4);
 preguntas[7]=new pregunta("¿Qué es un intérprete?" , "Un programa que se encarga de sólo analizar programas." , "Un programa que analiza y ejecuta simultáneamente un programa." , "Un programa que se encarga de la traducción de otro programa." , "Un programa que necesariamente resulta en código máquina." , 2 ) ;
 preguntas[8]=new pregunta("¿Cual de las siguientes es una característica de los intérpretes ?" , "Manejo de un lenguaje." , "Manejo único de dos lenguajes." , "Manejo mínimo de dos lenguajes." , "Ninguna de las anteriores." , 3);
 preguntas[9]=new pregunta("¿En cuántas partes se divide la organización interna de un intérprete?" , "2" , "3" , "4" , "5" , 4 );
+preguntas[10]=new pregunta("¿Cuántas cintas tiene una MT que representa a U?" , "3" , "4" , "5" , "6" , 2 );
