@@ -41,3 +41,6 @@ preguntas[10]=new pregunta("¿Cuántas cintas tiene una MT que representa a U?" 
 preguntas[11]=new pregunta("¿De cuántas fases se compone la actividad de U?" , "1" , "2" , "3" , "4" , 3 );
 preguntas[12]=new pregunta("¿A qué teorema pertenece el siguiente enunciado?.Existe una función calculable parcial de dos argumentos ϕz tal que, para todo x e i, ϕz(i, x) = ϕi(x) " , "universalidad" , "cardinalidad" , "complejidad" , "computabilidad" , 1 );
 preguntas[13]=new pregunta("Dentro de la siguiente representación U〈φ,x〉=φi(x).¿A qué corresponde φ?" , "función universal" , "la entrada" , "conjunto de funciones" , "la salida" , 3 );
+preguntas[14]=new pregunta("¿A qué fase de U corresponde: inicializar el contenido de todas las cintas?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 3 );
+preguntas[15]=new pregunta("¿A qué fase de U corresponde: simular reiteradamente los pasos de M hasta llegar a uno de sus estados finales?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 2 );
+preguntas[16]=new pregunta("¿A qué fase de U corresponde: si la fase anterior termina, limpiar las cintas manteniendo sólo el output en la primera.?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 1 );
