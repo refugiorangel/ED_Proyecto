@@ -14,33 +14,222 @@
 	</head>
 	<body style="">
 		<section>
-			<h2>Intérpretes</h2>	
-			<h5><p align="justify">Para Turing el proceso de computación efectiva son dadas por el “computer”, el cual 
-				se encarga de la percepción y memoria limitadas que se cristalizan en la utilización de papel y lápiz, 
-				y operaciones elementales con ellos. Así computar es seguir una serie de reglas prescritas, 
-				por esto mismo la importancia de estas máquinas.
+			<h2>Intérpretes</h<h2>Intérpretes</h2>	
+			<h5><p align="justify">
+				Un intérprete es un programa que se encarga de  analizar y ejecutar un programa en 
+				lenguaje fuente de manera simultánea.
 			</p></h5>
 			<h5><p align="justify">
-				Un intérprete es una noción general que provee un marco uniforme que se utilizará para analizar,caracterizar 
-				y relacionar mecanismos físicos, como se usan en las calculadoras y computadoras una persona actuando mecánicamente 
-				o realizando reducciones de un término 𝛌.
+				Los intérpretes cuentan con dos entradas, las cuales son:
 			</p></h5>
 			<h5><p align="justify">
-				Un aspecto en común de lo mencionado anteriormente se puede caracterizar por su comportamiento. Por comportamiento 
-				queremos decir que es una descripción idealizada de la ocurrencia de eventos que se consideran relevantes.
-				Evitamos hacer una especificación de la definición, ya que lo que nos importa es obtener el concepto de sistema 
-				computacional en su generalidad y nuestros resultados aplicarán a los comportamientos.
+				• Un lenguaje(P) escrito en lenguaje fuente (LF), esto se denota como P/LF
 			</p></h5>
-			<h2>Funciones de interpretación</h2>				
-			<img src="media/img/Definicion_interprete.png" border="0" height="150" width="400" alt="">
 			<h5><p align="justify">
-				Cuando los elementos P se construyen utilizando algún lenguaje, lo llamamos lenguaje de programación. Cuando 
-				se considera el comportamiento en la salida de datos, suele obtenerse que B=D. Una función de interpretación 
-				prescribe el comportamiento de un conjunto de programas. Un programa existe cuando una función le da una interpretación. 
-				Un ejemplo son los números de Gödel los cuales permiten considerar los números como programas. Aclarando así que los 
-				conceptos de función de interpretación, programa son interdefinibles.
+				Con estos datos de entrada y mediante un proceso de interpretación se producen resultados.
 			</p></h5>
-			<img src="media/img/implementacion.png" border="0" height="250" width="450" alt="">
+			<img src="media/css/img/figura1.png" border="0" height="200" width="320" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Por lo general, los intérpretes se especializan en, al menos, dos idiomas, 
+				su lengua materna y una extranjera de su elección.
+			</p></h5>
+			<h2>Estructura de un intérprete</h2>				
+			<h5><p align="justify">
+				La organización interna de la mayoría de los intérpretes se puede separar 
+				en los siguiente módulos:
+			</p></h5>
+			<h5><p align="justify">
+				• Traductor a Representación Interna: Toma como entra el código de un programa en 
+				lenguaje fuente, analiza y transforma el programa en su respectiva representación interna.
+			</p></h5>
+			<h5><p align="justify">
+				• Representación Interna (P/RI): Dentro de estas representaciones, los árboles 
+				sintácticos suelen ser los más usados, además de utilizar estructuras de pila 
+				para una mayor eficiencia.
+			</p></h5>
+			<h5><p align="justify">
+				• Tabla de símbolos: Es se crea y utiliza en el proceso de traducción, en esta 
+				se van almacenando los símbolos dependiendo de la complejidad del lenguaje. Además 
+				de que se pueden almacenar etiquetas para instrucciones de salto, o de cualquier 
+				tipo que se necesite utilizar para la etapa de evaluación.
+			</p></h5>
+			<h5><p align="justify">
+				• Evaluador de Representación Interna: Se llevan a cabo las acciones convenientes 
+				para obtener buenos resultados. Dentro de éste proceso de evaluación se debe considerar 
+				la posible aparición de errores.
+			</p></h5>
+			<h5><p align="justify">
+				• Tratamiento de errores: En éste proceso pueden aparecer errores que el intérprete 
+				debe considerar.
+			</p></h5>
+			<img src="media/css/img/figura3.png" border="0" height="260" width="350" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Dentro de la representación interna tenemos dos métodos fundamentales:
+			</p></h5>
+			<h5><p align="justify">
+				* Interpretación Iterativa: Se utiliza principalmente en lenguajes sencillos, en 
+				ellos se analiza y ejecuta cada expresión de manera directa, algunos ejemplos de esto 
+				son los códigos de máquinas abstractas o lenguajes de sentencia simple. Consiste en 
+				un ciclo básico de búsqueda,análisis y ejecución de instrucciones.
+			</p></h5>
+			<img src="media/css/img/figura4.png" border="0" height="140" width="360" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Las instrucciones se buscan en el almacenamiento, en ocasiones el usuario las 
+				ingresa. Enseguida se analizan sus componentes y se ejecutan. En la mayoría de los casos 
+				las instrucciones se ejecutan y descomponen en varios casos, una por cada instrucción.
+			</p></h5>
+			<h5><p align="justify">
+				* Interpretación Recursiva: Una primera fase de especificación semántica mediante la construcción de 
+				un intérprete prototipo que actúa como una especificación ejecutable y una segunda fase de 
+				implementación del compilador de dicho lenguaje. 
+				Los intérpretes recursivos no son apropiados para aplicaciones prácticas debido a su ineficiencia 
+				y se utilizan únicamente como prototipo ejecutable del lenguaje. 
+				El problema de especificar un lenguaje mediante un intérprete prototipo es decidir en qué lenguaje 
+				se implementa dicho intérprete. 
+				Dicho lenguaje debe ser suficientemente expresivo y no ambigüo para definir claramente cómo 
+				funcionan las diferentes construcciones.
+			</p></h5>
+			<h2>Tipos de Intérpretes</h2>
+			<h5><p align="justify">
+				• Intérpretes puros: Analizan y ejecutan sentencia a sentencia todo el programa fuente. Se
+				utilizan desde la primera generación de ordenadores al permitir la ejecución de largos programas 
+				en ordenadores de memoria reducida, ya que sólo debían contener en memoria el intérprete y la 
+				sentencia a analizar y ejecutar en cada momento.
+			</p></h5>
+			<img src="media/css/img/figura6.png" border="0" height="360" width="450" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Una vez que este proceso ha finalizado, se envía al evaluador de instrucciones, este 
+				determina la instrucción siguiente a ejecutar. En caso de que no haya saltos se ejecuta la 
+				siguiente instrucción a la instrucción en curso.
+			</p></h5>
+			<h5><p align="justify">
+				• Intérpretes avanzados: En éste se incluye un paso previo al análisis. Posteriormente 
+				generan un lenguaje intermedio que ejecutan ellos mismos. De esta manera en casos de 
+				errores sintácticos, estos no pasan de la fase de análisis. 
+			</p></h5>
+			<h5><p align="justify">
+				•  La idea es compilar aquellas partes estáticas del programa en lenguaje fuente, 
+				marcando como dinámicas las que no puedan compilarse. En tiempo de ejecución, el sistema 
+				podrá compilar algunas partes dinámicas o recompilar partes dinámicas que hayan sido modificadas.
+				Estos sistemas acompañan el sistema que permite compilar módulos en tiempo de ejecución 
+				al código objeto generado.
+			</p></h5>
+			<h5><p align="justify">
+				• Evaluadores parciales: Con el uso de evaluadores parciales surge al considerar que 
+				la mayoría de los programas tiene dos tipos de entradas. El primer conjunto, se conoce 
+				como datos de entrada dinámicos (Din), mientra el segundo, serían los datos de entrada 
+				estáticos(Est). Dado un programa P, el proceso de evaluación parcial radica en construir 
+				otro programa especializado PEst para los datos estáticos de P. El programa  PEst suele 
+				estar escrito en el mismo lenguaje fuente que P y se debe garantizar que cuando se le presenten 
+				los datos dinámicos produzca los mismos resultados que si se hubiesen presentado todos los datos 
+				al programa P original.
+			</p></h5>
+			<img src="media/css/img/figura7.png" border="0" height="380" width="420" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Ejemplo: Considérese el siguiente fragmento de programa P1 que toma la entrada de dos 
+				ficheros diferentes, fichEst y fichDin y escribe el resultado en la salida estándar.
+			</p></h5>
+			<img src="media/css/img/figura8.png" border="0" height="150" width="400" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Si el contenido de fichEst fuese siempre 5 12 7 -1 el evaluador parcial podría generar 
+				un programa especializado para dicho conjunto de datos, obteniendo P1Est:
+			</p></h5>
+			<img src="media/css/img/figura9.png" border="0" height="100" width="400" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				Si se conoce de antemano que un programa P va a ejecutarse muchas veces con un mismo 
+				conjunto de datos Est pero diferentes datos Din, será más eficiente evaluar parcialmente 
+				P para obtener PEst y ejecutar luego Pest. Sin embargo, las cosas no son siempre tan fáciles, 
+				considérese que en el programa P1 se elimina la última sentencia «read» del bucle. Entonces el 
+				evaluador parcial, podría entrar en un bucle infinito intentando generar el programa 
+				especializado. Por este motivo, los evaluadores parciales deben realizar un complejo análisis 
+				del programa fuente para detectar que el proceso no genere un bucle infinito.
+			</p></h5>
+			<h5><p align="justify">
+				Para ello, supongamos que a la entrada del evaluador parcial se presenta el intérprete de 
+				un lenguaje de programación LF escrito en un lenguaje de transición LT, junto con un programa 
+				P escrito en LF. El evaluador parcial generará un intérprete especializado para el programa 
+				P en el lenguaje LT.
+			</p></h5>
+			<img src="media/css/img/figura10.png" border="0" height="390" width="460" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				La evaluación parcial tiene otras aplicaciones interesantes en campos como el 
+				ray-tracing, modelización de mundos virtuales , reconocimiento de patrones, consultas 
+				a bases de datos, redes neuronales, etc.
+			</p></h5>
+			<h5><p align="justify">
+				• Compiladores “Just in Time”: Con la aparición de Internet surge la necesidad de 
+				distribuir programas de una forma independiente de la máquina permitiendo su ejecución 
+				en una amplia variedad de plataformas. La interpretación de códigos de bytes supone una 
+				demora en los tiempos de ejecución.
+			</p></h5>
+			<h5><p align="justify">
+				En este modelo, una unidad de compilación o clase se transmite en el formato de 
+				códigos de bytes, pero no se realiza la interpretación.
+			</p></h5>
+			<img src="media/css/img/figura11.png" border="0" height="280" width="370" alt="">
+			<h5><p align="justify">
+			</p></h5>
+			<h5><p align="justify">
+				El sistema realiza dos acciones:
+			</p></h5>
+			<h5><p align="justify">
+				a) Compila la unidad B a código nativo.
+			</p></h5>
+			<h5><p align="justify">
+				b) Continúa la ejecución con el código nativo compilado de la unidad B
+			</p></h5>
+			<h5><p align="justify">
+				Las principales ventajas de la compilación Just in Time son: 
+			</p></h5>
+			<h5><p align="justify">
+				1.- Los programas grandes contienen porciones de código que no son ejecutadas en una 
+				ejecución típica del programa. Puesto que la compilación Just in Time sólo traduce 
+				aquéllas porciones de código que se necesitan, se evita el tener que compilar código 
+				que no se va a utilizar.
+			</p></h5>
+			<h5><p align="justify">
+				2.- Esta técnica tiende a repartir el tiempo de compilación a lo largo de la ejecución 
+				del programa. El efecto producido al interrumpir la ejecución para compilar una unidad 
+				es similar al producido por la recolección de basura.
+			</p></h5>
+			<h5><p align="justify">
+				• Compilación continua: La compilación continua surge como un intento de mejorar la 
+				compilación «Just in Time». El sistema mezcla el proceso de compilación a código nativo 
+				con el proceso de interpretación.
+			</p></h5>
+			<h5><p align="justify">
+				Código: El código tiene una mezcla de código fuente y código nativo del programa. Inicialmente 
+				todo el código está sin compilar, a medida que el programa es ejecutado, el compilador genera 
+				traducciones a código nativo de las unidades de compilación.
+			</p></h5>
+			<h5><p align="justify">
+				Compilador: Traduce las unidades de compilación a código nativo. A medida que se finaliza la 
+				traducción de una unidad, la versión en código nativa se deja disponible al intérprete. 
+			</p></h5>
+			<h5><p align="justify">
+				Intérprete: Comienza interpretando el código fuente, haciendo saltos a las versiones 
+				en código nativo a medida que éstas están disponibles. 
+			</p></h5>
+			<h5><p align="justify">
+				Monitor: Se encarga de coordinar la comunicación entre los dos módulos anteriores.
+			</p></h5>
+			<img src="media/css/img/figura11.png" border="0" height="260" width="320" alt="">
 			
 		</section>
 	</body>
