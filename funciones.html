@@ -25,7 +25,19 @@
 	el conjunto de funciones a simular. Tiende a ser representada de la siguiente forma:</p></h5>
 	<h2><p align="center">U〈φ,x〉=φi(x)</p></h2>
 	<h5><p align="center">Donde U es nuestra función universal, φ es el conjunto de funciones y x es la entrada. Una característica de la función universal es que el resultado de una
-	simulación de una función en particular debe ser igual a la función original evaluada al mismo con el mismo valor.</p></h5>
-			
+	simulación de una función en particular debe ser igual a la función original evaluada con el mismo valor.</p></h5>
+	<h5><p align="justify">Problema indecidible puede significar tanto “función no calculable” como “lenguaje no decidible”.</p></h5>
+	<h5><p align="justify">Máquina de Turing Universal: ¿Cuál es la característica fundamental de la Máquina de Turing universal? 
+	Esta máquina, que lleva por nombre U, recibe como input en la cinta la descripción “M” de una Máquina de Turing M y la descripción de un input w de esta misma M, y su trabajo es ejecutar M sobre dicho input. 
+	El resultado final de U será el mismo resultado (M(w)) que se obtendría ejecutando M sobre w, todo esto si esta computación termina. Si M calcula la función f, el resultado U("M", w) es igual que f(w). Si M no termina para el input w, entonces U tampoco terminará la computación para “M” y "w".</p></h5>
+	<h5><p align="justify">U se puede definir como una MT con 4 cintas.</p></h5>
+	<h5><p align="justify">La actividad de U consiste de tres fases: 
+	(1) fase U1: inicializar el contenido de todas las cintas; (2) fase U2: simular reiteradamente los pasos de M hasta llegar a uno de sus estados finales, si esto sucede en un tiempo finito; 
+	y (3) fase U3: si U2 termina, limpiar las cintas manteniendo sólo el output en la primera.</p></h5>
+	<h5><p align="justify">• La cinta C1 contiene inicialmente el input: la descripción de M y su input w. La fase U1 mueve w a la cinta C2, así que esta cinta sólo contiene la representación de M al empezar U2. Al terminar U2, si es que termina, C1 contendrá únicamente el output M(w).</p></h5>
+	<h5><p align="justify">• La cinta C2 contiene, a lo largo de toda la computación de U, una representación de la cinta de M.</p></h5>
+	<h5><p align="justify">• La cinta C3 contiene una representación del estado actual de M, que va cambiando según su función de transición δM almacenada en C1.</p></h5>
+	<h5><p align="justify">• La cinta C4 contiene un número que simula la actual posición de la cabeza de M en su cinta.</p></h5>
+	<h5><p align="justify">Teorema (enumeración o universalidad): Existe una función calculable parcial de dos argumentos ϕz tal que, para todo x e i, ϕz(i, x) = ϕi(x).</p></h5>			
 </body>
 </html>
