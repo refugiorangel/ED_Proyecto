@@ -75,5 +75,5 @@ preguntas[45]=new pregunta("¿Qué es una Máquina de Turing?" , "cinta infinita
 preguntas[46]=new pregunta("¿En una Máquina de Turing que representa δ?" , "conjunto finito de los estados internos de la cabeza" , "estado inicial" , "conjunto de los estados finales" , "función de transición" , 4 );
 preguntas[47]=new pregunta("¿Qué contiene la cinta C3?" , "número que simula la actual posición de la cabeza de M en su cinta" , "representación del estado actual de M" , "representación de la cinta de M" , "descripción de M" , 2 );
 preguntas[48]=new pregunta("¿Qué contiene la cinta C4?" , "representación del estado actual de M" , "representación de la cinta de M" , "descripción de M" , "número que simula la actual posición de la cabeza de M en su cinta" , 4 );
-preguntas[49]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
+preguntas[49]=new pregunta("Todas estas son cosas que contiene una configuración de una Máquina de Turing, excepto..." , "contenido de la cinta leída hasta el momento" , "posición de la cabeza en la cinta" , "lenguajes de programación usados" , "estado interno" , 3 );
 preguntas[50]=new pregunta("¿Qué significa el término “problema indecidible”?","función indescifrable","función invisible","función no calculable","función no legible",3);
