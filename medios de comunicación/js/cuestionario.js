@@ -65,6 +65,6 @@ preguntas[34]=new pregunta("¿Cuál es la característica de una función univer
 preguntas[35]=new pregunta("¿Qué es lo último que contendrá C1 una vez acabada la fase U2?" , "la representación de M " , "la descripción de M" , "input w" , "el output M(w)" , 4 );
 preguntas[36]=new pregunta("¿Qué simula una máquina universal?" , "comportamiento de conjunto de funciones" , "comportamiento de otras máquinas de Turing" , "funciones universales" , "funciones computables" , 2 );
 preguntas[37]=new pregunta("¿Qué simula la función universal?" , "comportamiento de conjunto de funciones" , "comportamiento de otras máquinas de Turing" , "funciones universales" , "funciones computables" , 1 );
-preguntas[38]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
+preguntas[38]=new pregunta("¿Qué debe tener una función para ser computable?" , "6" , "3" , "debe existir un algoritmo que dada la entrada se llegue al mismo valor de dicha función" , "5" , 3 );
 preguntas[39]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
 preguntas[40]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
