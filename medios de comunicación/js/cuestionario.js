@@ -27,7 +27,6 @@ var retorno=[];
 var preguntas=[];
 
 
-preguntas[0]=new pregunta("¿Qué significa el término “problema indecidible”?","función indescifrable","función invisible","función no calculable","función no legible",3);
 preguntas[1]=new pregunta("¿Cuál es la tesis que nos indica que cualquier función computable tiene representación con una máquina de Turing?","tesis de Church","tesis de Riemann","tesis de Turing","tesis de Rice",1);
 preguntas[2]=new pregunta("De acuerdo a la Tesis de Church, ¿qué recursos se pueden usar para calcular cualquier función calculable?","Una máquina universal de Turing o un programa while","función µ-Recursiva o un programa for","un programa while, una función indecidible o una función  µ-Recursiva","Una máquina de Turing, función µ-Recursiva o un programa while: Respuesta correcta",4);
 preguntas[3]=new pregunta("¿De qué año es el artículo “On Computable Numbers, with an Application to the Entscheidungsproblem” de Alan Turing?","1938","1936","1935","1940",2);
@@ -77,4 +76,4 @@ preguntas[46]=new pregunta("¿En una Máquina de Turing que representa δ?" , "c
 preguntas[47]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
 preguntas[48]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
 preguntas[49]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
-preguntas[50]=new pregunta("¿Cuántos tipos de interprete se mencionan?" , "6" , "3" , "1" , "5" , 1 );
+preguntas[50]=new pregunta("¿Qué significa el término “problema indecidible”?","función indescifrable","función invisible","función no calculable","función no legible",3);
