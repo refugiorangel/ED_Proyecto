@@ -6,7 +6,6 @@
 */
 
 $(document).ready(function() {
-
 	/* 
 	LEFT AND RIGHT BARS
 	============================================================== 
@@ -22,24 +21,24 @@ $(document).ready(function() {
 	
 	$nLeft.hide();
 	$nRight.hide();
-	
-	$nlTrigger.mouseenter(function() {
+
+	$nlTrigger.click(function() {
 		$(this).hide();
 		$nLeft.show().stop().animate({left: show}, speed);
 	});
-	$nLeft.mouseleave(function() {
+	$nLeft.click(function() {
 		$(this).stop().animate({left: hide}, speed, function() {
 			$(this).hide();
 			$nlTrigger.show();
 		});
 	});
 	
-	$nrTrigger.mouseenter(function() {
+	$nrTrigger.click(function() {
 		$(this).hide();
 		$nRight.show().stop().animate({right: show}, speed);
 	});
 	
-	$nRight.mouseleave(function() {
+	$nRight.click(function() {
 		$(this).stop().animate({right: hide}, speed, function() {
 			$(this).hide();
 			$nrTrigger.show();
