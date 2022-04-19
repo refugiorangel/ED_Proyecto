@@ -30,7 +30,7 @@ preguntas[0]=new pregunta("¿Cuál es la tesis que nos indica que cualquier func
 preguntas[1]=new pregunta("¿Cómo se denota un lenguaje (P) escrito en lenguaje fuente (LF)?","LF/P","F/P","P/LF","P/L",3);
 preguntas[2]=new pregunta("¿De qué año es el artículo “On Computable Numbers, with an Application to the Entscheidungsproblem” de Alan Turing?","1938","1936","1935","1940",2);
 preguntas[3]=new pregunta("¿Qué significa la palabra Entscheidungsproblem?","Problema de Decisión","Problema de Invasión","Problema de Acción","Problema de Reacción",1);
-preguntas[4]=new pregunta("¿Cuál es la representación de una función universal?","U〈x,y〉=y(x)","U〈φ,y〉=φi(y)","U〈x,y〉=φi(x,y)","U〈φ,x〉=φi(x)",4);
+preguntas[4]=new pregunta("¿Cuál es la representación de una función universal?","U〈w,y〉=y(w)","U〈M,y〉=M(y)","U〈w,y〉=M(w,y)","U〈M,w〉=M(w)",4);
 preguntas[5]=new pregunta("Todas estas son propiedades de un algoritmo según Turing, excepto...","el número de instrucciones es finito","no hay límite al número de pasos ni a la cantidad de memoria necesaria","cada instrucción tiene un efecto limitado","los pasos no son deterministas",4);
 preguntas[6]=new pregunta("¿Qué es un intérprete?" , "Un programa que se encarga de sólo analizar programas." , "Un programa que analiza y ejecuta simultáneamente un programa." , "Un programa que se encarga de la traducción de otro programa." , "Un programa que necesariamente resulta en código máquina." , 2 ) ;
 preguntas[7]=new pregunta("¿Cual de las siguientes es una característica de los intérpretes ?" , "Manejo de un lenguaje." , "Manejo único de dos lenguajes." , "Manejo mínimo de dos lenguajes." , "Ninguna de las anteriores." , 3);
@@ -38,7 +38,7 @@ preguntas[8]=new pregunta("¿En cuántas partes se divide la organización inter
 preguntas[9]=new pregunta("¿Cuántas cintas tiene una MT que representa a U?" , "3" , "4" , "5" , "6" , 2 );
 preguntas[10]=new pregunta("¿De cuántas fases se compone la actividad de U?" , "1" , "2" , "3" , "4" , 3 );
 preguntas[11]=new pregunta("¿A qué teorema pertenece el siguiente enunciado?.Existe una función calculable parcial de dos argumentos ϕz tal que, para todo x e i, ϕz(i, x) = ϕi(x) " , "universalidad" , "cardinalidad" , "complejidad" , "computabilidad" , 1 );
-preguntas[12]=new pregunta("Dentro de la siguiente representación U〈φ,x〉=φi(x).¿A qué corresponde φ?" , "función universal" , "la entrada" , "conjunto de funciones" , "la salida" , 3 );
+preguntas[12]=new pregunta("Dentro de la siguiente representación U〈M,w〉=M(w).¿A qué corresponde M?" , "función universal" , "la entrada" , "conjunto de instrucciones de la función" , "la salida" , 3 );
 preguntas[13]=new pregunta("¿A qué fase de U corresponde: inicializar el contenido de todas las cintas?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 3 );
 preguntas[14]=new pregunta("¿A qué fase de U corresponde: simular reiteradamente los pasos de M hasta llegar a uno de sus estados finales?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 2 );
 preguntas[15]=new pregunta("¿A qué fase de U corresponde: si la fase anterior termina, limpiar las cintas manteniendo sólo el output en la primera.?" , "U3" , "U2" , "U1" , "No es una función que realice ninguna de las fases" , 1 );
