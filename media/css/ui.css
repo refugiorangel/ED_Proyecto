@@ -272,49 +272,6 @@ LEFT & RIGHT BARS
 #nav-right {
   right: -220px;
 }
-#nav-right ul#audio {
-  position: relative;
-}
-#nav-right ul#audio h2 {
-  background: url(../img/ui_nr-audio.png) no-repeat 15px center;
-}
-#nav-right ul#audio li {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #333333;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-#nav-right ul#audio li span {
-  display: block;
-  width: 100%;
-  padding-bottom: 7.5px;
-}
-#nav-right ul#audio li #play,
-#nav-right ul#audio li #pause,
-#nav-right ul#audio li #stop {
-  display: block;
-  width: 14px;
-  height: 14px;
-  float: left;
-  margin-right: 15px;
-}
-#nav-right ul#audio li #play {
-  background: url(../img/nr_audio-play.png) no-repeat;
-}
-#nav-right ul#audio li #play:hover {
-  background: url(../img/nr_audio-play-hover.png) no-repeat;
-}
-#nav-right ul#audio li #pause {
-  background: url(../img/nr_audio-pause.png) no-repeat;
-}
-#nav-right ul#audio li #pause:hover {
-  background: url(../img/nr_audio-pause-hover.png) no-repeat;
-}
-#nav-right ul#audio li #stop {
-  background: url(../img/nr_audio-stop.png) no-repeat;
-}
-#nav-right ul#audio li #stop:hover {
-  background: url(../img/nr_audio-stop-hover.png) no-repeat;
-}
 #nav-right ul#files {
   position: relative;
   float: left;

@@ -97,31 +97,5 @@ $(document).ready(function() {
 	$theme9.click( function() {
 		$theme.removeClass().addClass('theme9');
 	});
-	
-	
-	/* 
-	AUDIO
-	============================================================== 
-	*/
-	
-	var x = $(".audio-player").length; // Count total audio players
-    var z = 0; // Start at first audio player
-
-    $("#play").click(function(){
-        $(".audio-player")[z].play();
-    })
-    $("#pause").click(function(){
-        $(".audio-player")[z].pause();
-    })
-    $("#stop").click(function(){
-        $(".audio-player")[z].pause();
-        $(".audio-player")[z].currentTime = 0;
-    })
-    $("#next").click(function(){
-        $(".audio-player")[z].pause();
-        z++;
-        if (z >= x) z = 0;
-        $(".audio-player")[z].play();
-    })
 		
 });
