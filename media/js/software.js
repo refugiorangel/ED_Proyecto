@@ -100,13 +100,13 @@ function selecciona(){
         case "es primo":
             res=universal(primo,x,y);
             break;
-        case "serie fibonacci":
+        /*case "serie fibonacci":
             res= universal(GenerateFibonacci,x,y);
-            break;
+            break;*/
         case "factorial":
             res=universal(factorial,x,y);
             break;
     }
-    let linea="Simulación de " +univ+".\nResultado es:\n "+res;
+    let linea="Simulación de " +univ+".\nResultado es:\n ";
     document.getElementById("result").innerText=linea;
 }
