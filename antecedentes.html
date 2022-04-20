@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 4"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	
+</head>
+<body style="">
+    <h2><p>Funciones</p></h2>
+    <h5><p>En matemáticas, una función es una regla de correspondencia que relaciona los elementos de un primer conjunto con los de un segundo conjunto.
+        El primer conjunto o el conjunto inicial es conocido como dominio, mientras que el segundo conjunto o conjunto final es conocido como rango.
+        Una característica de las funciones es que a cada valor del dominio le corresponde un solo valor del rango. Por lo general, tiende a representarse de la
+        siguiente forma:</p></h5>
+        <h5><div align="center" font-size=24px><p >f : A→B</p></div></h5>
+    <h5><p>En donde: <br></p></h5>
+    <h5><p>f: función<br>A: dominio<br>B: rango</p></h5>
+    <img src="media/img/funcion.png" border="0" height="350" width="350" alt="">
+    <h5><br>Algunas de las funciones matemáticas más utilizadas son las que retornan un solo valor y las que retornan un grupo de valores que serán manejadas como 
+        unidad o como vectores.</h5>
+    <h5>Una característica del primer tipo de funciones es que sin importar el conjunto del dominio, el valor de salida siempre será un número real. El dominio bien 
+        puede ser el conjunto de los reales, complejos o una variable vectorial. Una forma de representar este tipo de funciones puede ser la siguiente:</h5>
+    <img src="media/img/funcion_real.png" alt="">
+
+    <br><h5>El segundo tipo de funciones tienen la característica de que su valor de llegada es un arreglo de valores. Matemáticamente son conocidas como funciones vectoriales.
+        Pueden ser representadas de la siguiente forma.</h5>
+    <img src="media/img/funcion_vectorial.png" alt="">
+    <h2><br> Funciones Computables</h2>
+    <h5><br>Computacionalmente hablando, para que una función sea computable debe existir un algoritmo que dada la entrada, un valor perteneciente al rango, se llega 
+    al valor de llegada correspondiente a esa función. A todas las funciones que se pueden calcular matemáticamente se les dio el nombre de funciones efectivamente calculables.
+    Estas funciones efectivamente calculables se identifican como funciones computables</h5>
+    <h5>Para aclarar las ideas, necesitamos definir intuitivamente un formalismo de computación, o simplemente formalismo, como la descripción de un sistema en el que 
+    se puede llevar a cabo unos cálculos. Por ejemplo, todo lenguaje de programación es un formalismo de computación, al igual que una Máquina de Turing o una Función 
+    Recursiva, lo es.</h5>
+    <h5>La idea de algoritmo que Turing tenía en la cabeza era algo como: un algoritmo es una serie de instrucciones con las siguientes propiedades:</h5>
+    <ul>
+        <h5><li>El número de instrucciones es finito, es decir, un algoritmo se puede escribir en su totalidad en una porción finita de espacio, ya sea una hoja de papel o un disco duro.</li></h5>
+        <h5><li>Cada instrucción tiene un efecto limitado, es decir, no puede modificar el estado de algo que está fuera de su alcance.</li></h5>
+        <h5><li>La computación se desarrolla en pasos individuales (una instrucción a la vez) y discretos.</li></h5>
+        <h5><li>Los pasos son deterministas: dependen únicamente de un número finito de pasos previos y de una cantidad finita de datos</li></h5>
+        <h5><li>No hay límite al número de pasos ni a la cantidad de memoria necesaria para almacenar los datos (finitos) iniciales, intermedios y finales.</li></h5>
+    </ul>
+    <h5>Para representar las funciones efectivamente calculabes en forma computacional, se utilizan herramientas de programación; en donde estará especificado el algoritmo o las instrucciones a seguir
+        para llegar al valor perteneciente al rango. Estas herramientas son conocidos como lenguajes de programación, ya sea de alto o bajo nivel, como lo son java, python, c, lenguaje ensamblador, 
+        entre otros. Cada lenguaje sigue su propia sintaxis definida por su desarrollador.</h5>
+    <h5>La siguiente imagen corresponde a la representación general de una función real de variable vectorial en lenguaje java.</h5>
+    <img src="media/img/comp_lineal.png" alt="">
+    <br><h5>Mientras que la siguiente imagen corresponde a una función vectorial de variable vectorial.</h5>
+    <img src="media/img/comp_vectorial.png" alt="">
+    <br><br>
+    <h2>Tesis de Church-Turing</h2>
+    <h5>Esta tesis en distintas versiones equivalentes: por ejemplo, la Tesis de Church-Turing es la versión más conocida, y sólo se refiere a las MTs: Cualquier función que se pueda calcular es 
+        Turing-computable, es decir, existe una MT que la calcula. Queda claro que, en el caso de la </h5>
+    <ul>
+        <h4>Hechos de la Tesis Church Turing</h3>
+        <h5><li>Toda función efectivamente calculable puede ser calculada por una MT, una Función µ-Recursiva o un programa while.</li></h5>
+        <h5><li>Las MTs se consideran como el formalismo que mejor describe la idea de efectiva computabilidad.</li></h5>        
+    </ul>
+    <br><br>
+    <h2>Máquina de Turing</h2>
+    <h5>La primera definición de Máquina de Turing se encuentra en el artículo del mismo Alan M. Turing del 1936 “On Computable Numbers, with an Application to the Entscheidungsproblem”.
+        En esté artículo se introduce la idea de Máquina de Turing, la máquina universal, los números computables, y el problema de la parada. Finalmente, el material introducido se 
+        aplica al Entscheidungsproblem o Problema de la Decisión. Turing se apoya en la aritmetización de Gödel.</h5>
+    <h5>Intuitivamente, una Máquina de Turing es una cinta infinita (tiene un inicio, pero no un fin) de casillas iguales. Una cabeza se mueve sobre la cinta: en cada paso, se puede mover 
+        como mucho una casilla hacia la derecha o una hacia la izquierda. La cabeza puede leer, escribir o borrar símbolos en la casilla en la que se encuentra (no puede observar otras 
+        casillas ni actuar sobre ellas). La cabeza se encuentra en cada instante en un estado interno y, en cada paso, actúa según este mismo estado y el símbolo leído en la cinta. La 
+        acción elegida en cada paso consiste en escribir un símbolo nuevo en la cinta o en mover la cabeza, y se acompaña a un cambio del estado interno. Más formalmente, una Máquina 
+        de Turing (MT) es una quíntupla hK, Σ, s, H, δi donde:</h5>
+    <ul>
+        <h5><li>K es el conjunto finito de los estados internos de la cabeza.</li></h5>
+        <h5><li>Σ es el conjunto finito de los símbolos que pueden aparecer en la cinta.</li></h5>
+        <h5><li>s ∈ K es el estado inicial.</li></h5>
+        <h5><li>H ⊆ K es el conjunto de los estados finales: normalmente incluye el estado h de terminación normal (es decir, el estado en el que la cabeza no tiene nada más que hacer 
+            y termina su trabajo) y el estado e de error (es decir, el estado en el que se encuentra la cabeza cuando algo ha ido mal).</li></h5>
+        <h5><li>δ es la función de transición: su dominio es2 (K \ H) × Σ, es decir, el estado actual (que no puede ser un estado final) y el símbolo leído en la cinta; su codominio es 
+            K × (Σ ∪ {←, →}), es decir, δ devuelve el nuevo estado interno y una acción a ejecutar (escribir un símbolo en la cinta o mover la cabeza). </li></h5>
+    </ul>
+    <br><br>
+    <h5>El significado de δ es el siguiente: su dominio representa el input (la condición inicial) en cada paso: la cabeza se encuentra en un estado interno q ∈ K \ H (es decir, no 
+        final) y observa el símbolo σ ∈ Σ en la casilla donde se encuentra. El resultado (q ′ , x) = δ(q, σ) es la acción ejecutada, o paso: la cabeza pasa del estado q al estado q ′ y </h5>
+    <h5><li>si x ∈ Σ entonces escribe el símbolo x en la cinta, y no se mueve</li></h5>
+    <h5><li>si x =← entonces da un paso a la izquierda</li></h5>
+    <h5><li>si x =→ entonces da un paso a la derecha. </li></h5>
+    <br><br>
+    <h5>El conjunto Σ incluye un símbolo ⊲ que marca el inicio de la cinta. Toda Máquina de Turing, al encontrar este símbolo, se mueve inmediatamente hacia la derecha sin cambiar de estado. 
+        Σ también incluye el símbolo “␣”, que indica que la casilla está vacía.</h5>
+    <h5>Composición de Máquinas de Turing Cuando hablamos de componer Máquinas de Turing no pensamos en distintas MTs, cada una con su cabeza, cinta y función de transición, que se comunican 
+        entre ellas a través de algún sofisticado protocolo. Hablamos de fusionar distintas funciones de transición, cada una dedicada a realizar una parte de la computación principal en una 
+        única MT con una única cabeza y una única cinta.</h5>
+    <h5>Una configuración es una descripción instantánea de la computación en un momento dado: incluye el contenido de la cinta leída hasta el momento; la posición de la cabeza en la 
+        cinta; y su estado interno. La condición “leída hasta el momento” es fundamental, porque la cinta es infinita y representar su contenido sería imposible.</h5>
+    <br>
+    <img align="center" src="media/img/cinta.png" height="300" width="600" alt="">
+</body>
+</html>
