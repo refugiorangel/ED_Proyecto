@@ -12,7 +12,7 @@
 </head>
 
 <body style="">
-	<section class="" align="center">
+	<section class="" >
         <h2>Instrucciones para el manejo del ejemplo dinámico:</h2>
         <h5>Este ejemplo es una breve descripción sobre las funciones universales. El objetivo se este ejemplo es observar el comportamiento
             de una función universal. Las funciones a simular son las que se encuentras en menú de opciones.
@@ -22,12 +22,21 @@
             factorial, se realizan las operaciones correspondientes con el primer valor ingresado.</h5>
         <h5>3.Para la opción de valor trunco se deben ingresar números decimales</h5>
         <br>
-        <input type="number" class="fname" id="num1" required="" placeholder="Número entero 1">
+        <h5>Nuestra función universal está definida como:</h5>
+        <h5><p align="center"> U(operación,x,y)</p></h5>
+        <h5>
+            En donde:
+            <br>U es la función universal
+            <br>operación es la función a simular
+            <br>x,y son las variables de entrada
+        </h5>
+        <div align="center">
+        <input type="number" class="for" id="num1" required="" placeholder="Número entero 1">
         <br>
-        <input type="number" class="fname" id="num2" required="" placeholder="Número entero 2">
+        <input type="number" class="for" id="num2" required="" placeholder="Número entero 2">
         <br>
             <h3><label for="universal">Elige la funcion a simular:</label></h3> 
-            <select name="universal" id="universal" class="fname">
+            <select name="universal" id="universal">
               <option vulue="suma">suma</option>
               <option vulue="resta">resta</option>
               <option vulue="mul">multiplicación</option>
@@ -41,7 +50,8 @@
               <option value="serie fibonacci">serie fibonacci</option>
               <option value="factorial">factorial</option>
             </select>
-            <div><button onclick="selecciona()">Ver función</button></div>
+            <div><button onclick="selecciona()" width=25%>Ver función</button></div>
+        </div>
             <div><h5 align==center><span id="result" ></span></div></h5>
     </section>
 </body>
