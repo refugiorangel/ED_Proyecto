@@ -107,6 +107,6 @@ function selecciona(){
             res=universal(factorial,x,y);
             break;
     }
-    let linea="Simulación de " +univ+".\nResultado es:\n +res";
+    let linea="Simulación de " +univ+".\nResultado es:\n" +res;
     document.getElementById("result").innerText=linea;
 }
