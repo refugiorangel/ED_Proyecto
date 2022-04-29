@@ -21,24 +21,24 @@ $(document).ready(function() {
 	
 	$nLeft.hide();
 	$nRight.hide();
-
-	$nlTrigger.click(function() {
+	
+	$nlTrigger.mouseenter(function() {
 		$(this).hide();
 		$nLeft.show().stop().animate({left: show}, speed);
 	});
-	$nLeft.click(function() {
+	$nLeft.mouseleave(function() {
 		$(this).stop().animate({left: hide}, speed, function() {
 			$(this).hide();
 			$nlTrigger.show();
 		});
 	});
 	
-	$nrTrigger.click(function() {
+	$nrTrigger.mouseenter(function() {
 		$(this).hide();
 		$nRight.show().stop().animate({right: show}, speed);
 	});
 	
-	$nRight.click(function() {
+	$nRight.mouseleave(function() {
 		$(this).stop().animate({right: hide}, speed, function() {
 			$(this).hide();
 			$nrTrigger.show();
