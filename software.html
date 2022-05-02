@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" style=""><head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="Author" content="Equipo 4"><!--Autor-->
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+    <script src="media/js/software.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+</head>
+
+<body style="">
+	<section class="" >
+        <h2>Instrucciones para el manejo del ejemplo dinámico:</h2>
+        <h5>Este ejemplo es una breve descripción sobre las funciones universales. El objetivo se este ejemplo es observar el comportamiento
+            de una función universal. Las funciones a simular son las que se encuentras en menú de opciones.
+        </h5>
+        <h5>1.Es necesario que se ingrese valores en los dos campos</h5>
+        <h5>2.En las opciones de raíz cuadrada, raíz cúbica,valor absoluto, valor trunco, es primo y 
+            factorial, se realizan las operaciones correspondientes con el primer valor ingresado.</h5>
+        <h5>3.Para la opción de valor trunco se deben ingresar números decimales</h5>
+        <br>
+        <h5>Nuestra función universal está definida como:</h5>
+        <h5><p align="center"> U(operación,x,y)</p></h5>
+        <h5>
+            En donde:
+            <br>U es la función universal
+            <br>operación es la función a simular
+            <br>x,y son las variables de entrada
+        </h5>
+        <div align="center">
+        <input type="number" class="for" id="num1" required="" placeholder="Número entero 1">
+        <br>
+        <input type="number" class="for" id="num2" required="" placeholder="Número entero 2">
+        <br>
+            <h3><label for="universal">Elige la funcion a simular:</label></h3> 
+            <select name="universal" id="universal">
+              <option vulue="suma">suma</option>
+              <option vulue="resta">resta</option>
+              <option vulue="mul">multiplicación</option>
+              <option vulue="div">división</option>
+              <option value="potencia">potencia</option>
+              <option value="raíz cuadrada">raíz cuadrada</option>
+              <option value="raíz cúbica">raíz cúbica</option>
+              <option value="absoluto">valor absoluto</option>
+              <option value="valor trunco">valor trunco</option>
+              <option value="es primo">es primo</option>
+            <!-- <option value="serie fibonacci">serie fibonacci</option> -->
+              <option value="factorial">factorial</option>
+            </select>
+            <div><button onclick="selecciona()">Ver función</button></div>
+        </div>
+            <div><h5 align==center><span id="result" ></span></div></h5>
+    </section>
+</body>
+</html>
