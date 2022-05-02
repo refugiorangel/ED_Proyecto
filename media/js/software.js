@@ -55,7 +55,7 @@ function GenerateFibonacci(number,y){
     }
     return fibonacci;
 }
-function selecciona(){
+function llamadaUniversal(){
     let univ=document.getElementById('universal').value;
     let x=document.getElementById('num1').value;
     let y=document.getElementById('num2').value;
@@ -108,5 +108,62 @@ function selecciona(){
             break;
     }
     let linea="Simulación de " +univ+".\nResultado es:\n"+res;
+    document.getElementById("result").innerText=linea;
+}
+
+
+function original(){
+    let univ=document.getElementById('universal').value;
+    let x=document.getElementById('num1').value;
+    let y=document.getElementById('num2').value;
+    if((x%1!=0 && univ!="valor trunco" || y%1!=0 && univ!="valor trunco")){
+        document.getElementById("result").innerText='Ingresa número entero';
+        return;
+    }else if(x==false || y==false){
+        document.getElementById("result").innerText='Ingresa los dos valores';
+        return;
+    }
+    x=parseInt(x);
+    y=parseInt(y);
+    var res=0;
+    switch(univ){
+        case "suma":
+            res= suma(x,y);
+            break;
+        case "resta":
+            res= resta(x,y);
+            break;
+        case "multiplicación":
+            res= multiplicacion(x,y);
+            break;
+        case "división":
+            res= division(x,y);
+            break;
+        case "potencia":
+            res= potencia(x,y);
+            break;
+        case "raíz cuadrada":
+            res= raiz_cuadrada(x,y);
+            break;
+        case "raíz cúbica":
+            res= raiz_cubica(x,y);
+            break;
+        case "absoluto":
+            res= absoluto(x,y);
+            break;
+        case "valor trunco":
+            res= trunca(x,y);
+            break;
+        case "es primo":
+            res=primo(x,y);
+            break;
+        /*case "serie fibonacci":
+            res= GenerateFibonacci(x,y);
+            break;*/
+        case "factorial":
+            res=factorial(x,y);
+            break;
+    }
+    let linea="Función original " +univ+".\nResultado es:\n"+res;
     document.getElementById("result").innerText=linea;
 }

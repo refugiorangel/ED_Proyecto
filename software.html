@@ -13,13 +13,13 @@
 
 <body style="">
 	<section class="" >
-        <h2>Instrucciones para el manejo del ejemplo dinámico:</h2>
-        <h5>Este ejemplo es una breve descripción sobre las funciones universales. El objetivo se este ejemplo es observar el comportamiento
+        <h2>Instrucciones para el manejo del software:</h2>
+        <h5>Este software es una breve descripción sobre las funciones universales. El objetivo se este ejemplo es observar el comportamiento
             de una función universal. Las funciones a simular son las que se encuentras en menú de opciones.
         </h5>
         <h5>1.Es necesario que se ingrese valores en los dos campos</h5>
         <h5>2.En las opciones de raíz cuadrada, raíz cúbica,valor absoluto, valor trunco, es primo y 
-            factorial, se realizan las operaciones correspondientes con el primer valor ingresado.</h5>
+            factorial es necesario ingresar los dos campos, pero se realiza la operación correspondientes con el primer valor ingresado.</h5>
         <h5>3.Para la opción de valor trunco se deben ingresar números decimales</h5>
         <br>
         <h5>Nuestra función universal está definida como:</h5>
@@ -50,7 +50,10 @@
             <!-- <option value="serie fibonacci">serie fibonacci</option> -->
               <option value="factorial">factorial</option>
             </select>
-            <div><button onclick="selecciona()">Ver función</button></div>
+            <div><button onclick="llamadaUniversal()">Ver resultado de la función universal</button>
+                <button onclick="original()">Ver resultado de la función original</button>
+                </div>
+                
         </div>
             <div><h5 align==center><span id="result" ></span></div></h5>
     </section>
