@@ -67,7 +67,21 @@
 			</ul>
 		</nav>
 		
-		<nav id="nav-right">	
+		<nav id="nav-right">
+			<ul id="audio">
+				<h2>Audio</h2>
+				<li>
+					<span>Resumen</span>
+					<!-- Controladores diseñados-->
+					<audio class ="audio-player" name="" src="media/video/resumen.mp3"></audio>
+					<audio class ="audio-player" name="" src="media/video/resumen.ogg"></audio>
+					<a id = "play" href="#"><a id ="pause" href="#"></a><a id ="stop" href="#"></a>
+					<!-- Controladores default de audio (opcional) -->
+					<audio controls>
+						<source src= "media/video/resumen.mp3" type="audio/mpeg">
+					</audio>
+				</li>
+			
 			<ul id="files">
 				<h2>Archivos</h2>
 				<li><a href="media/pdf/funciones.pdf" target="_blank">Funciones Universales e Intérpretes</a></li>
